@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThezeroVerse - Exploración Espacial Interactiva</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ThezeroVerse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#constellations">Constelaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#satellites">Satélites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Eventos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Canvas -->
+    <section id="home" class="hero-section">
+        <div id="three-canvas"></div>
+        <div class="hero-content text-center">
+            <h1 class="display-3 animate__animated animate__fadeInDown">Explora el Universo</h1>
+            <p class="lead animate__animated animate__fadeIn animate__delay-1s">Datos astronómicos en tiempo real</p>
+            <a href="#constellations" class="btn btn-primary btn-lg animate__animated animate__pulse animate__delay-2s" id="startButton">Comienza Ahora</a>
+        </div>
+    </section>
+
+    <!-- Constellations Section -->
+    <section id="constellations" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__zoomIn">Constelaciones</h2>
+            <div class="row" id="constellation-list">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Satellites Section -->
+    <section id="satellites" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__zoomIn">Satélites en Órbita</h2>
+            <div class="row" id="satellite-list">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__zoomIn">Eventos Astronómicos</h2>
+            <div class="row" id="event-list"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 SpaceVerse. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
